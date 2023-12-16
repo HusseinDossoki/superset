@@ -113,3 +113,24 @@ try:
     )
 except ImportError:
     logger.info("Using default Docker config...")
+
+
+# Tahaluf Customization
+APP_NAME = "Empresa Dashboards"
+APP_ICON = "/static/tahaluf-assets/logo-horiz.svg"
+MENU_HIDE_USER_INFO = False
+FAVICONS = [
+    {
+        "href": "/static/tahaluf-assets/favicon.png",
+        "sizes": "16x16",
+        "type": "image/png",
+        "rel": "icon",
+    },
+    {
+        "href": "/static/tahaluf-assets/favicon.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "rel": "icon",
+    },
+]
+PREFERRED_DATABASES = ["PostgreSQL"]
